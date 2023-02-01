@@ -14,11 +14,17 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-       child: Center(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Flutter Page'),
+      ),
+      body:  Center(
         child: GestureDetector(
         child: Text(
           'Contador: $counter',
+          style: const TextStyle(
+            fontSize: 40,
+          ),
           ),
           onTap: () {
             setState(() {
@@ -28,6 +34,14 @@ class _HomePageState extends State<HomePage> {
           },
          ),
        ),
+       floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () {
+        setState(() {
+               counter++;
+            });
+         print('$counter');
+      },),
     );
   }
 }
