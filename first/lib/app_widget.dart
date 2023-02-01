@@ -11,15 +11,16 @@ class MyApp extends StatelessWidget {
     return AnimatedBuilder(
       animation: AppControler.instance,
       builder: (context, child){
-      return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        brightness: AppControler.instance.isDartTheme ? Brightness.dark : Brightness.light,
-      ),
-      home:const HomePage(),
-    );
-    }
+        
+        return MaterialApp(
+         debugShowCheckedModeBanner: false,
+          theme: ThemeData(
+           primarySwatch: Colors.blue,
+           brightness: AppControler.instance.isDartTheme ? Brightness.dark : Brightness.light,
+         ),
+         home:const HomePage(),
+       );
+      }
     );
   }
 }
