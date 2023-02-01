@@ -18,22 +18,18 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Flutter Page'),
       ),
-      body:  Center(
-        child: GestureDetector(
-        child: Text(
-          'Contador: $counter',
-          style: const TextStyle(
-            fontSize: 40,
+      body: Container(
+        height: 100,
+        width: 100,
+        color: Colors.yellow,
+          child: Center(
+            child: Container(
+              height: 50,
+              width: 50,
+              color: Colors.blue,
+            ),
           ),
-          ),
-          onTap: () {
-            setState(() {
-               counter++;
-            });
-            print('$counter');
-          },
-         ),
-       ),
+        ),
        floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.add),
         onPressed: () {
