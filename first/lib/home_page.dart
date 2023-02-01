@@ -27,7 +27,44 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('Contador: $counter'),
+            Container(
+              height: 20,
+            ),
             const CustomSwicther(),
+
+            Container(
+              height: 20,
+            ),
+            
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.blue,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
