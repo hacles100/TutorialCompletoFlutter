@@ -12,17 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: const Center(
-      child: Text(
-        'Flutterando 2',
-        textDirection: TextDirection.ltr,
-        style: TextStyle(
-          color: Colors.red,
-          fontSize: 30
-          ),
-        ),
-    ),
+    return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.red 
+      ),
+      home: Container(
+        child:const Center(child: Text('Flutter')),
+      ),
     );
   }
 }
